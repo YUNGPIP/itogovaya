@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Итоговая работа по первому разделу</title>
+	<script type="text/javascript">
+		let info = {"surname":"Михеева", "name":"Татьяна", "patronymic":"Александровна", "ocupation":"Преподаватель специальных дисциплин", "degree":"Высшее", "education":"Московский государственный институт электронной техники (технический университет)", "qualification":"Инженер-программист инфокоммуникационных систем", "speciality":"Программное обеспечение радиоэлектронных систем", "discipline":["Основы алгоритмизации и программирования", "Компьютерная графика"], "category":"Первая", "exp":"13", "email":"pechora-proger@mail.ru", "site":"pechora-proger.ru"};
+		let line = `
+			<p class='zag'><i>${info.surname} ${info.name} ${info.patronymic}</i></p>
+			<img src='WEB/no-image.jpg'>
+			<h2>${info.ocupation}</h2>
+			<div>
+				<p>Основная информация:</p>
+				<p>Уровень образования: ${info.degree}</p>
+				<p>Образование: ${info.education}</p>
+				<p>Квалификация: ${info.qualification}</p>
+				<p>Специализация: ${info.speciality}</p>
+				<p>Преподаваемые дисциплины: </p>
+				<ul>
+					<li>${info.discipline[0]}</li>
+					<li>${info.discipline[1]}</li>
+				</ul>
+				<p>Категория: ${info.category}</p>
+				<p>Стаж: ${info.exp}</p>
+				<p>E-mail: ${info.email}</p>
+				<p>Персональный сайт: ${info.site}</p> 
+			</div>
+		`
+	</script>
+</head>
+<body>
+	<style type="text/css">
+	* {box-sizing: border-box;}
+
+	img{
+		width: 500px;
+		float: right;
+		margin-right: 100px;
+	}
+
+	body { 
+		margin: 0;
+		font-family: Arial, sans-serif;
+		text-align: center;
+		background-color: #FFEB3B;
+	}
+
+	div{
+		margin-left: 100px;
+		text-align: left;
+		font-size: 19px;
+	}
+
+	.zag{
+		font-size: 40px;
+	}
+
+	nav {
+	  	display: flex;
+	  	flex-direction: row;
+	  	justify-content: space-around;
+	  	flex-wrap: wrap;
+	  	background-color: black;
+	  	padding: 20px 10px;
+	}
+
+	header a {
+	  	color: white;
+	  	padding: 12px;
+	  	text-decoration: none;
+	  	font-size: 18px; 
+	  	border-radius: 4px;
+	}
+
+	header a:hover {
+	  	background-color: #FBC02D;
+	  	color: #212121;
+	}
+
+	nav {
+	  	display: flex;
+	  	align-items: center;
+	}
+	</style>
+	<header>	
+		<nav>
+			<a>О проекте</a>
+			<a>Курсы</a>
+			<a>Преподаватели</a>
+			<a>Контакты</a>
+		</nav>
+	</header>
+	<section class="info">
+		<script type="text/javascript">
+			document.write(line);
+		</script>
+	</section>
+</body>
+</html>
