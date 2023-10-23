@@ -11,7 +11,7 @@
 			<img src='WEB/no-image.jpg'>
 			<h2>${info.ocupation}</h2>
 			<div>
-				<p>Основная информация:</p>
+				<h3>Основная информация:</h3>
 				<p>Уровень образования: ${info.degree}</p>
 				<p>Образование: ${info.education}</p>
 				<p>Квалификация: ${info.qualification}</p>
@@ -21,12 +21,16 @@
 					<li>${info.discipline[0]}</li>
 					<li>${info.discipline[1]}</li>
 				</ul>
+				<h3>Дополнительная информация:</h3>
 				<p>Категория: ${info.category}</p>
 				<p>Стаж: ${info.exp}</p>
 				<p>E-mail: ${info.email}</p>
 				<p>Персональный сайт: ${info.site}</p> 
 			</div>
 		`
+		let name = prompt("Введите имя:");
+		let surname = prompt("Введите фамилию:");
+		let patronymic = prompt("Введите отчество:");
 	</script>
 </head>
 <body>
